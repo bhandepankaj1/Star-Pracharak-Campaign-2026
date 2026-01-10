@@ -925,14 +925,13 @@ export default function Home() {
               variants={scaleIn}
               className="glass rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 border border-gold/20 text-center"
             >
-
-              <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-6 md:mb-8">
+			  
+			  <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-6 md:mb-8">
                 {[
-				  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/share/1HMwoubkJb/" },
+                  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/share/1HMwoubkJb/" },
                   { icon: Twitter, label: "Twitter", href: "https://x.com/BansodeSpeaks" },
                   { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/bansodespeaks?igsh=M3hsamJsMTU1Z3Rn" },
                   { icon: Youtube, label: "YouTube", href: "https://youtube.com/@sanjaybansodencp?si=dUokE-FteLsrvQTG" },
-                
                 ].map((social, i) => (
                   <motion.a
                     key={i}
@@ -940,13 +939,14 @@ export default function Home() {
                     whileHover={{ scale: 1.15, y: -5, boxShadow: "0 0 30px rgba(255,200,50,0.4)" }}
                     whileTap={{ scale: 0.95 }}
                     className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-saffron to-gold flex items-center justify-center text-white shadow-lg transition-all"
-                    data-testid={`social-${social.label.toLowerCase()}`}
+                    data-testid={social-${social.label.toLowerCase()}}
                     aria-label={social.label}
                   >
                     <social.icon className="w-5 h-5 md:w-6 md:h-6" />
                   </motion.a>
                 ))}
               </div>
+			  
 
 <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 text-muted-foreground text-sm md:text-base">
   {/* Contact 1 */}
