@@ -106,8 +106,8 @@ export default function Home() {
     {
       icon: Calendar,
       title: "निवडणूक दिनांक",
-      value: "१५ जानेवारी २०२५",
-      subtitle: "बुधवार",
+      value: "१५ जानेवारी २०२६",
+      subtitle: "गुरुवार",
     },
     {
       icon: Clock,
@@ -244,7 +244,7 @@ export default function Home() {
                 स
               </div>
               <span className="text-base md:text-xl font-semibold text-gradient-gold">
-                जनआंदोलन २०२५
+                जनआंदोलन २०२६
               </span>
             </motion.div>
             <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm">
@@ -311,7 +311,7 @@ export default function Home() {
                   className="w-2 h-2 rounded-full bg-green-500"
                 />
                 <span className="text-gold text-xs md:text-sm font-medium">
-                  १५ जानेवारी २०२५ | पुणे व पिंपरी-चिंचवड
+                  १५ जानेवारी २०२६ | पुणे व पिंपरी-चिंचवड
                 </span>
               </motion.div>
 
@@ -330,7 +330,7 @@ export default function Home() {
                   transition={{ duration: 0.7, delay: 0.7 }}
                   className="block text-gradient-saffron mt-1 md:mt-2"
                 >
-                  निवडणूक २०२५
+                  निवडणूक २०२६
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 30 }}
@@ -482,10 +482,10 @@ export default function Home() {
                         मा. श्री संजयजी बनसोडे
                       </h3>
                       <p className="text-muted-foreground mt-1 md:mt-2 text-sm md:text-base">
-                        माजी मंत्री, महाराष्ट्र राज्य
+                        आमदार, महाराष्ट्र राज्य (माजी मंत्री)
                       </p>
                       <p className="text-muted-foreground text-sm md:text-base">
-                        माजी आमदार
+                        राष्ट्रवादी काँग्रेस पक्ष
                       </p>
                       <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-3 md:mt-4">
                         <span className="px-2 md:px-3 py-1 rounded-full bg-saffron/20 text-saffron text-xs font-medium">
@@ -498,7 +498,10 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-gold/10">
-                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+				  {/*<p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+				  <p className="text-muted-foreground text-sm md:text-base leading-8 md:leading-9">
+					<p className="text-muted-foreground text-sm md:text-base leading-9 md:leading-10 mt-2 md:mt-3">*/}
+					<p className="text-muted-foreground text-sm md:text-base leading-relaxed mt-2 md:mt-3">
                       सक्षम, दूरदृष्टीपूर्ण आणि लोकाभिमुख नेतृत्वाने जनतेच्या विश्वासाला पात्र ठरलेले नेते. 
                       जनआंदोलन व परिवर्तनाच्या या लढ्याचे प्रमुख मार्गदर्शक.
                     </p>
@@ -549,7 +552,11 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-gold/10">
-                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+				
+					{/*<p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+				  <p className="text-muted-foreground text-sm md:text-base leading-8 md:leading-9">
+					<p className="text-muted-foreground text-sm md:text-base leading-9 md:leading-10 mt-2 md:mt-3">*/}
+					<p className="text-muted-foreground text-sm md:text-base leading-relaxed mt-2 md:mt-3">
                       महाराष्ट्राच्या विकासाचे शिल्पकार. दीर्घकालीन राजकीय अनुभव व प्रशासकीय कौशल्याने 
                       राज्याच्या प्रगतीत महत्त्वपूर्ण योगदान देणारे नेते.
                     </p>
@@ -632,9 +639,11 @@ export default function Home() {
               <div className="absolute top-2 md:top-4 left-2 md:left-4 text-6xl md:text-8xl text-gold/10 font-serif select-none">
                 "
               </div>
-              <div className="relative z-10 space-y-5 md:space-y-6 text-base sm:text-lg md:text-xl leading-relaxed text-foreground/90">
+
+              {/*<div className="relative z-10 space-y-5 md:space-y-6 text-base sm:text-lg md:text-xl leading-relaxed text-foreground/90">*/}
+			  <div className="relative z-10 space-y-5 md:space-y-6 text-base sm:text-lg md:text-xl leading-8 md:leading-9 text-foreground/90">
                 <motion.p variants={fadeInUp}>
-                  आता वेळ आली आहे आपली <strong className="text-saffron">एकजूट</strong>, <strong className="text-gold">ताकद</strong> आणि <strong className="text-saffron">बहुमत</strong> प्रत्यक्ष कृतीतून सिद्ध करण्याची। येत्या <strong className="text-gold">१५ जानेवारी २०२५</strong> रोजी होणाऱ्या पुणे व पिंपरी-चिंचवड महानगरपालिका निवडणुकांसाठी आपण सर्वांनी मोठ्या संख्येने सहभागी होणे अत्यंत गरजेचे आहे।
+                  आता वेळ आली आहे आपली <strong className="text-saffron">एकजूट</strong>, <strong className="text-gold">ताकद</strong> आणि <strong className="text-saffron">बहुमत</strong> प्रत्यक्ष कृतीतून सिद्ध करण्याची। येत्या <strong className="text-gold">१५ जानेवारी २०२६</strong> रोजी होणाऱ्या पुणे व पिंपरी-चिंचवड महानगरपालिका निवडणुकांसाठी आपण सर्वांनी मोठ्या संख्येने सहभागी होणे अत्यंत गरजेचे आहे।
                 </motion.p>
                 <motion.p variants={fadeInUp}>
                   हा <strong className="text-saffron">जनआंदोलनाचा</strong> आणि <strong className="text-gold">परिवर्तनाचा</strong> लढा आपल्या लाडक्या माजी मंत्री <strong className="text-saffron">मा. श्री संजयजी बनसोडे साहेबांच्या</strong> नेतृत्वाखाली चालू आहे। त्यांच्या सक्षम, दूरदृष्टीपूर्ण आणि लोकाभिमुख नेतृत्वाला अधिक बळ देण्यासाठी, त्यांचा हात मजबूत करणे ही आपली सामूहिक जबाबदारी आहे।
@@ -710,7 +719,11 @@ export default function Home() {
                       <h3 className="font-serif text-lg md:text-xl font-bold mb-2 text-gradient-saffron">
                         {item.title}
                       </h3>
-                      <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                      
+					  {/*<p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+				  <p className="text-muted-foreground text-sm md:text-base leading-8 md:leading-9">
+					<p className="text-muted-foreground text-sm md:text-base leading-9 md:leading-10 mt-2 md:mt-3">*/}
+					<p className="text-muted-foreground text-sm md:text-base leading-relaxed mt-2 md:mt-3">
                         {item.description}
                       </p>
                     </div>
@@ -813,7 +826,7 @@ export default function Home() {
                   <h3 className="font-serif text-xl md:text-2xl font-bold text-white mt-1">
                     मा. श्री संजयजी बनसोडे
                   </h3>
-                  <p className="text-white/70 text-sm md:text-base">माजी मंत्री | माजी आमदार</p>
+                  <p className="text-white/70 text-sm md:text-base">आमदार, महाराष्ट्र राज्य (माजी मंत्री)</p>
                 </motion.div>
               </motion.div>
 
@@ -912,9 +925,6 @@ export default function Home() {
               variants={scaleIn}
               className="glass rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 border border-gold/20 text-center"
             >
-              <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
-                जनआंदोलनात सहभागी व्हा आणि विजयाचे साक्षीदार बना
-              </p>
 
               <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-6 md:mb-8">
                 {[
@@ -937,22 +947,25 @@ export default function Home() {
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 text-muted-foreground text-sm md:text-base">
-                <motion.div 
-                  whileHover={{ scale: 1.05 }}
-                  className="flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-4 h-4 md:w-5 md:h-5 text-gold" />
-                  <span>+91 XXXXX XXXXX</span>
-                </motion.div>
-                <motion.div 
-                  whileHover={{ scale: 1.05 }}
-                  className="flex items-center justify-center gap-2"
-                >
-                  <Mail className="w-4 h-4 md:w-5 md:h-5 text-gold" />
-                  <span>contact@example.com</span>
-                </motion.div>
-              </div>
+<div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 text-muted-foreground text-sm md:text-base">
+  {/* Contact 1 */}
+  <motion.div 
+    whileHover={{ scale: 1.05 }}
+    className="flex items-center gap-3 bg-card/50 p-3 rounded-xl border border-gold/20"
+  >
+    <div className="flex flex-col items-center text-center">
+      <span className="font-medium">Kapil Waichalkar</span>
+      <span className="flex items-center gap-1">
+        <Phone className="w-4 h-4 text-gold" />+91 99703 10544
+      </span>    
+      <br></br>  
+      <span className="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl" >उदगीर मित्र मंडळ</span>
+    </div>
+  </motion.div>
+  <br></br>
+  <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">जनआंदोलनात सहभागी व्हा आणि विजयाचे साक्षीदार बना</p>
+</div>
+
             </motion.div>
           </AnimatedSection>
         </div>
@@ -966,10 +979,10 @@ export default function Home() {
               whileHover={{ scale: 1.02 }}
             >
               <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-saffron to-gold flex items-center justify-center text-white font-bold font-serif text-xs md:text-sm">
-                स
+                ©
               </div>
               <span className="text-xs md:text-sm text-muted-foreground">
-                © २०२५ जनआंदोलन | सर्व हक्क राखीव
+                © २०२६ उदगीर मित्र मंडळ | सर्व हक्क राखीव
               </span>
             </motion.div>
             <motion.div 
