@@ -241,7 +241,7 @@ export default function Home() {
               whileHover={{ scale: 1.02 }}
             >
               <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-saffron to-gold flex items-center justify-center text-white font-bold font-serif text-sm md:text-base">
-                स
+                
               </div>
               <span className="text-base md:text-xl font-semibold text-gradient-gold">
                 जनआंदोलन २०२६
@@ -315,14 +315,16 @@ export default function Home() {
                 </span>
               </motion.div>
 
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 md:mb-6">
+              
+			  <h1 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6">
+
                 <motion.span
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.6 }}
                   className="block text-foreground"
                 >
-                  महानगरपालिका
+                  पुणे व पिंपरी-चिंचवड
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 30 }}
@@ -330,7 +332,7 @@ export default function Home() {
                   transition={{ duration: 0.7, delay: 0.7 }}
                   className="block text-gradient-saffron mt-1 md:mt-2"
                 >
-                  निवडणूक २०२६
+                  महानगरपालिका निवडणूक २०२६
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 30 }}
@@ -954,14 +956,20 @@ export default function Home() {
     whileHover={{ scale: 1.05 }}
     className="flex items-center gap-3 bg-card/50 p-3 rounded-xl border border-gold/20"
   >
-    <div className="flex flex-col items-center text-center">
-      <span className="font-medium">Kapil Waichalkar</span>
-      <span className="flex items-center gap-1">
-        <Phone className="w-4 h-4 text-gold" />+91 99703 10544
-      </span>    
+  
+	<div className="flex flex-col items-center text-center font-extrabold items-center justify-center">
+      <span className="text-base md:text-lg font-bold">
+        Kapil Waichalkar
+      </span>
+	  <span className="flex items-center gap-1 font-semibold text-sm md:text-base">
+        <Phone className="w-4 h-4 text-gold font-bold" />
+           +91 99703 10544
+        </span>   
       <br></br>  
-      <span className="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl" >उदगीर मित्र मंडळ</span>
+      <span className="font-medium text-xl sm:text-xl md:text-2xl lg:text-4xl" >उदगीर मित्र मंडळ</span>
     </div>
+	
+	
   </motion.div>
   <br></br>
   <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">जनआंदोलनात सहभागी व्हा आणि विजयाचे साक्षीदार बना</p>
@@ -982,17 +990,18 @@ export default function Home() {
               <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-saffron to-gold flex items-center justify-center text-white font-bold font-serif text-xs md:text-sm">
                 ©
               </div>
-              <span className="text-xs md:text-sm text-muted-foreground">
-                © २०२६ उदगीर मित्र मंडळ | सर्व हक्क राखीव
+              <span className="text-2xl md:text-sm text-muted-foreground font-bold">
+                © 2026 DHIPAN Software Technologies Private Limited | All Rights Reserved | info@dhipansoft.in
               </span>
             </motion.div>
             <motion.div 
               className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 3, repeat: Infinity }}
-            >
-              <span>एकजूट, उत्साह आणि विश्वास</span>
-              <span className="text-gold text-base md:text-lg">✊</span>
+            > 
+			  <span className="text-2xl md:text-sm text-muted-foreground font-bold">
+                उदगीर मित्र मंडळ </span>
+              <span className="text-gold text-2xl md:text-sm md:text-lg text-muted-foreground font-extrabold" >✊</span>
             </motion.div>
           </div>
         </div>
