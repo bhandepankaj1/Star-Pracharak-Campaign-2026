@@ -131,8 +131,20 @@
     @apply border-border;
   }
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased text-foreground;
     overflow-x: hidden;
+
+    /* ---------------------------- */
+    /* ADDED BACKGROUND IMAGE FIX */
+    background-image: url("/Background_Img.JPEG"); /* path from public folder */
+    background-size: cover;                     /* cover entire screen */
+    background-position: center;                /* center image */
+    background-repeat: no-repeat;               /* no repeat */
+    min-height: 100vh;                          /* ensures body fills viewport */
+    /* ---------------------------- */
+
+    /* COMMENTED OUT TO SHOW IMAGE */
+    /* @apply bg-background; */
   }
   html {
     scroll-behavior: smooth;

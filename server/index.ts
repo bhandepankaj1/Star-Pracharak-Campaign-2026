@@ -2,6 +2,9 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
+import path from "path"; // <-- Added to handle static files
+
+import { fileURLToPath } from "url";
 
 const app = express();
 const httpServer = createServer(app);
@@ -58,6 +61,17 @@ app.use((req, res, next) => {
 
   next();
 });
+
+
+// ----------------- ADD THIS BLOCK -----------------
+// Convert import.meta.url to __dirname (needed in ES modules)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static files from client/public (so /Background_Img.JPEG works)
+app.use(express.static(path.join(__dirname, "../client/public")));
+// ----------------- ADD THIS BLOCK -----------------
+
 
 (async () => {
   await registerRoutes(httpServer, app);

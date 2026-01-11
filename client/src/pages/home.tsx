@@ -27,8 +27,9 @@ import {
   HandHeart,
   UsersRound,
 } from "lucide-react";
-import sanjayBansodeImage from "@assets/images_1768026997707.jpeg";
-import ajitPawarImage from "@assets/images_(4)_1768027109017.jpeg";
+
+import sanjayBansodeImage from "../assets/Sanjay_Bansode_Img.JPEG";
+import ajitPawarImage from "../assets/Ajit_Pawar_Img.JPEG";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -271,174 +272,211 @@ export default function Home() {
           </div>
         </motion.nav>
       </header>
+      
+      
+	<div className="flex justify-between items-center px-[10%]"> 
+     {/* px-[10%] -> 10% margin left & right, adjust as needed */}
 
-      <section
-        ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 overflow-hidden"
-        data-testid="section-hero"
+  {/* Left Logo */}
+  <motion.div
+    {...floatAnimation}
+    className="relative w-[20vw] h-[20vw] sm:w-[15vw] sm:h-[15vw] md:w-[12vw] md:h-[12vw] lg:w-[10vw] lg:h-[10vw] xl:w-[8vw] xl:h-[8vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
+    className="relative w-[25vw] h-[25vw] sm:w-[20vw] sm:h-[20vw] md:w-[18vw] md:h-[18vw] lg:w-[15vw] lg:h-[15vw] xl:w-[12vw] xl:h-[12vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
+     
+ >
+    <img
+      src="/NCP_Logo.PNG"
+      alt="NCP_Logo"
+      className="w-full h-full object-cover object-top"
+      data-testid="img-leader-hero"
+    />
+  </motion.div>
+
+  {/* Right Bansode Photo */}
+  <motion.div
+    {...floatAnimation}
+    className="relative w-[20vw] h-[20vw] sm:w-[15vw] sm:h-[15vw] md:w-[12vw] md:h-[12vw] lg:w-[10vw] lg:h-[10vw] xl:w-[8vw] xl:h-[8vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
+    className="relative w-[25vw] h-[25vw] sm:w-[20vw] sm:h-[20vw] md:w-[18vw] md:h-[18vw] lg:w-[15vw] lg:h-[15vw] xl:w-[12vw] xl:h-[12vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
+
+  >
+    <img
+      src={sanjayBansodeImage}
+      alt="मा. श्री संजयजी बनसोडे"
+      className="w-full h-full object-cover object-top"
+      data-testid="img-leader-hero"
+    />
+  </motion.div>
+</div>
+
+
+
+	  
+	  
+	  
+	<section
+  ref={heroRef}
+  className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 overflow-hidden w-full mx-auto"
+  data-testid="section-hero"
+>
+
+  <motion.div
+    style={{ y: heroY, opacity: heroOpacity, scale: heroScale }}
+    className="absolute inset-0"
+  >
+    <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+    <motion.div 
+      animate={{ 
+        backgroundPosition: ["0% 0%", "100% 100%"],
+      }}
+      transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
+      className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] md:w-[1000px] h-[600px] md:h-[1000px] rounded-full bg-gradient-radial from-saffron/25 via-gold/15 to-transparent blur-3xl"
+    />
+  </motion.div>
+
+  <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12">
+    {/* Changed grid → flex for proper horizontal centering */}
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12">
+      
+      {/* Left Column: Text */}
+      <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        className="order-2 lg:order-1 text-center"
       >
         <motion.div
-          style={{ y: heroY, opacity: heroOpacity, scale: heroScale }}
-          className="absolute inset-0"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="inline-flex items-center gap-2 mb-4 md:mb-6 px-3 md:px-4 py-2 rounded-full glass border border-gold/30"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-          <motion.div 
-            animate={{ 
-              backgroundPosition: ["0% 0%", "100% 100%"],
-            }}
-            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
-            className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] md:w-[1000px] h-[600px] md:h-[1000px] rounded-full bg-gradient-radial from-saffron/25 via-gold/15 to-transparent blur-3xl"
+          <motion.span
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="w-2 h-2 rounded-full bg-green-500"
           />
+          <span className="text-gold text-xs md:text-sm font-medium items-center justify-center mx-auto">
+            १५ जानेवारी २०२६ | पुणे व पिंपरी-चिंचवड
+          </span>
         </motion.div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -80 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="order-2 lg:order-1 text-center lg:text-left"
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="inline-flex items-center gap-2 mb-4 md:mb-6 px-3 md:px-4 py-2 rounded-full glass border border-gold/30"
-              >
-                <motion.span
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                  className="w-2 h-2 rounded-full bg-green-500"
-                />
-                <span className="text-gold text-xs md:text-sm font-medium">
-                  १५ जानेवारी २०२६ | पुणे व पिंपरी-चिंचवड
-                </span>
-              </motion.div>
+        <h1 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6">
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="block text-foreground"
+          >
+            पुणे व पिंपरी-चिंचवड
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.7 }}
+            className="block text-gradient-saffron mt-1 md:mt-2"
+          >
+            महानगरपालिका निवडणूक २०२६
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
+            className="block text-gradient-gold text-2xl sm:text-3xl md:text-4xl mt-2 md:mt-3"
+          >
+            जनआंदोलन व परिवर्तनाचा लढा
+          </motion.span>
+        </h1>
 
-              
-			  <h1 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 md:mb-6">
-
-                <motion.span
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.6 }}
-                  className="block text-foreground"
-                >
-                  पुणे व पिंपरी-चिंचवड
-                </motion.span>
-                <motion.span
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.7 }}
-                  className="block text-gradient-saffron mt-1 md:mt-2"
-                >
-                  महानगरपालिका निवडणूक २०२६
-                </motion.span>
-                <motion.span
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.8 }}
-                  className="block text-gradient-gold text-2xl sm:text-3xl md:text-4xl mt-2 md:mt-3"
-                >
-                  जनआंदोलन व परिवर्तनाचा लढा
-                </motion.span>
-              </h1>
-
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.7, delay: 0.9 }}
-                className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 max-w-xl mx-auto lg:mx-0"
-              >
-                एकजूट, उत्साह आणि विश्वास यांच्या बळावर यश निश्चित आहे!
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 1 }}
-                className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start"
-              >
-                <motion.a
-                  href="#message"
-                  whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(255,140,0,0.4)" }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-saffron to-gold text-white font-semibold rounded-xl shadow-lg glow-saffron transition-all text-sm md:text-base"
-                  data-testid="btn-read-message"
-                >
-                  संदेश वाचा
-                </motion.a>
-                <motion.a
-                  href="#leaders"
-                  whileHover={{ scale: 1.05, backgroundColor: "rgba(255,200,50,0.1)" }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-6 md:px-8 py-3 md:py-4 glass border border-gold/30 font-semibold rounded-xl flex items-center justify-center gap-2 transition-all text-sm md:text-base"
-                  data-testid="btn-leaders"
-                >
-                  <Users className="w-4 h-4 md:w-5 md:h-5 text-gold" />
-                  नेतृत्व पहा
-                </motion.a>
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="order-1 lg:order-2 flex justify-center"
-            >
-              <div className="relative">
-                <motion.div
-                  animate={{ 
-                    scale: [1, 1.1, 1],
-                    opacity: [0.4, 0.6, 0.4],
-                  }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute inset-0 bg-gradient-to-br from-saffron/40 via-gold/30 to-transparent rounded-full blur-3xl scale-125"
-                />
-                <motion.div 
-                  {...floatAnimation}
-                  className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
-                >
-                  <img
-                    src={sanjayBansodeImage}
-                    alt="मा. श्री संजयजी बनसोडे"
-                    className="w-full h-full object-cover object-top"
-                    data-testid="img-leader-hero"
-                  />
-                </motion.div>
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                  className="absolute -inset-6 md:-inset-8 border-2 border-dashed border-gold/20 rounded-full"
-                />
-                <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                  className="absolute -inset-12 md:-inset-16 border border-saffron/10 rounded-full"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-
-        <motion.div
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.8 }}
-          className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2"
+          transition={{ duration: 0.7, delay: 0.9 }}
+          className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 max-w-xl mx-auto"
+        >
+          एकजूट, उत्साह आणि विश्वास यांच्या बळावर यश निश्चित आहे!
+        </motion.p>
+
+        {/* Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 1 }}
+          className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center"
         >
           <motion.a
-            href="#leaders"
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-            className="block"
+            href="#message"
+            whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(255,140,0,0.4)" }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-saffron to-gold text-white font-semibold rounded-xl shadow-lg glow-saffron transition-all text-sm md:text-base"
+            data-testid="btn-read-message"
           >
-            <ChevronDown className="w-7 h-7 md:w-8 md:h-8 text-gold/60" />
+            संदेश वाचा
+          </motion.a>
+          <motion.a
+            href="#leaders"
+            whileHover={{ scale: 1.05, backgroundColor: "rgba(255,200,50,0.1)" }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 md:px-8 py-3 md:py-4 glass border border-gold/30 font-semibold rounded-xl flex items-center justify-center gap-2 transition-all text-sm md:text-base"
+            data-testid="btn-leaders"
+          >
+            <Users className="w-4 h-4 md:w-5 md:h-5 text-gold" />
+            नेतृत्व पहा
           </motion.a>
         </motion.div>
-      </section>
+      </motion.div>
 
+      {/* Right Column: Animation */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        className="order-1 lg:order-2 flex justify-center"
+      >
+        <div className="relative">
+          <motion.div
+            animate={{ 
+              scale: [1, 1.1, 1],
+              opacity: [0.4, 0.6, 0.4],
+            }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute inset-0 bg-gradient-to-br from-saffron/40 via-gold/30 to-transparent rounded-full blur-3xl scale-125"
+          />
+        </div>
+      </motion.div>
+      
+    </div>
+  </div>
+
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 1.8 }}
+    className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2"
+  >
+    <motion.a
+      href="#leaders"
+      animate={{ y: [0, 12, 0] }}
+      transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+      className="block"
+    >
+      <ChevronDown className="w-7 h-7 md:w-8 md:h-8 text-gold/60" />
+    </motion.a>
+  </motion.div>
+</section>
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
       <section id="leaders" className="py-16 md:py-24 relative" data-testid="section-leaders">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-saffron/5 to-transparent" />
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
