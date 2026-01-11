@@ -280,7 +280,6 @@ export default function Home() {
   {/* Left Logo */}
   <motion.div
     {...floatAnimation}
-    className="relative w-[20vw] h-[20vw] sm:w-[15vw] sm:h-[15vw] md:w-[12vw] md:h-[12vw] lg:w-[10vw] lg:h-[10vw] xl:w-[8vw] xl:h-[8vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
     className="relative w-[25vw] h-[25vw] sm:w-[20vw] sm:h-[20vw] md:w-[18vw] md:h-[18vw] lg:w-[15vw] lg:h-[15vw] xl:w-[12vw] xl:h-[12vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
      
  >
@@ -295,7 +294,6 @@ export default function Home() {
   {/* Right Bansode Photo */}
   <motion.div
     {...floatAnimation}
-    className="relative w-[20vw] h-[20vw] sm:w-[15vw] sm:h-[15vw] md:w-[12vw] md:h-[12vw] lg:w-[10vw] lg:h-[10vw] xl:w-[8vw] xl:h-[8vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
     className="relative w-[25vw] h-[25vw] sm:w-[20vw] sm:h-[20vw] md:w-[18vw] md:h-[18vw] lg:w-[15vw] lg:h-[15vw] xl:w-[12vw] xl:h-[12vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
 
   >
