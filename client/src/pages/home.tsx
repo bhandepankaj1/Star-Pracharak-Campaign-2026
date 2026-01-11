@@ -283,22 +283,12 @@ export default function Home() {
     className="relative w-[25vw] h-[25vw] sm:w-[20vw] sm:h-[20vw] md:w-[18vw] md:h-[18vw] lg:w-[15vw] lg:h-[15vw] xl:w-[12vw] xl:h-[12vw] rounded-full overflow-hidden border-4 border-gold/50 glow-gold"
      
  >
-<<<<<<< HEAD
 	<img
   src="/NCP_Logo.PNG"
   alt="NCP_Logo"
   className="w-full h-full object-cover object-top"
   data-testid="img-leader-hero"
 />
-
-=======
-    <img
-      src="/NCP_Logo.PNG"
-      alt="NCP_Logo"
-      className="w-full h-full object-cover object-top"
-      data-testid="img-leader-hero"
-    />
->>>>>>> a5e51c29e05d09370883c8172cfd89f9842c883e
   </motion.div>
 
   {/* Right Bansode Photo */}
